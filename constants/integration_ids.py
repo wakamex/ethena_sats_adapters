@@ -75,6 +75,7 @@ class IntegrationID(Enum):
     # Lyra
     LYRA_SUSDE_BULL_MAINNET = ("lyra_susde_bull_mainnet", "Lyra sUSDe Bull Vault Mainnet", Token.SUSDE)
     LYRA_SUSDE_BULL_ARBITRUM = ("lyra_susde_bull_arbitrum", "Lyra sUSDe Bull Vault Arbitrum", Token.SUSDE)
+    LYRA_SUSDE_EXCHANGE_DEPOSIT= ("lyra_susde_exchange_deposit", "Lyra sUSDe Exchange Deposits", Token.SUSDE)
     # Velodrome
     VELODROME_MODE_USDE = ('velodrome_mode_usde', 'Velodrome Mode USDe', Token.USDE)
     VELODROME_MODE_SUSDE = ('velodrome_mode_susde', 'Velodrome Mode sUSDe', Token.SUSDE)
@@ -135,6 +136,9 @@ class IntegrationID(Enum):
 
     # Inverse Finance FiRM
     FIRM_SUSDE = ('firm_susde', 'Inverse Finance FiRM sUSDe', Token.SUSDE)
+
+    # Hyperdrive
+    HYPERDRIVE_SUSDE = ('hyperdrive_susde', 'ElementDAO 182 Day sUSDe Hyperdrive', Token.SUSDE)
 
     def __init__(self, column_name: str, description: str, token: Token = Token.USDE):
         self.column_name = column_name
